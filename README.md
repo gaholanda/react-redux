@@ -14,7 +14,7 @@ Na pasta `redux` temos três subpastas:
 - `reducers`: conjuntos dos estados iniciais da aplicação que serão alterados por uma `action`;
 - `store`: definição do estados iniciais e ações que serão compartilhados na aplicação.
 
-### Sobre
+### Leia mais
 
-[Redux](https://github.com/reduxjs/redux)
-[React Redux](https://github.com/reduxjs/react-redux)
+- [Redux](https://github.com/reduxjs/redux)
+- [React Redux](https://github.com/reduxjs/react-redux)
