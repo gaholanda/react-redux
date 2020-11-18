@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #cccccc;
+  --text-primary: #ffffff;
+  --text-secondary: #000000;
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+.app {
+  display: grid;
+  grid-template-rows: 60px 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "video"
+    "sidebar";
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .app {
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "header header"
+      "video sidebar";
+  }
+}
+
+header {
+  display: flex;
+  grid-area: header;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 12px;
+  color: var(--text-primary);
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.video {
+  grid-area: video;
+  padding: 16px;
+}
+
+.video .subtitle {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.video .player {
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  padding: 16px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.sidebar ul li {
+  padding: 5px 0;
+}
+
+.sidebar ul li button {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li button:hover {
+  background-color: var(--secondary-color);
+  color: var(--text-secondary);
+}
