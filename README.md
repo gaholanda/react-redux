@@ -1,6 +1,6 @@
 # Utilizando o Redux com React
 
-Projeto de simples para mostrar a implementação do Redux com o React.
+Projeto simples para mostrar a implementação do Redux com o React.
 
 ## O que é Redux?
 
